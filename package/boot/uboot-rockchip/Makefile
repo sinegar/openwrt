@@ -196,6 +196,13 @@ define U-Boot/rock-2-rk3528
     radxa_rock-2f
 endef
 
+define U-Boot/nanopi-zero2-rk3528
+  $(U-Boot/rk3528/Default)
+  NAME:=NanoPi Zero 2
+  BUILD_DEVICES:= \
+    friendlyarm_nanopi-zero2
+endef
+
 
 # RK3566 boards
 
@@ -444,6 +451,7 @@ UBOOT_TARGETS := \
   hinlink-h28k-rk3528 \
   radxa-e20c-rk3528 \
   rock-2-rk3528 \
+  nanopi-zero2-rk3528 \
   nanopi-r3s-rk3566 \
   radxa-cm3-io-rk3566 \
   radxa-zero-3-rk3566 \
